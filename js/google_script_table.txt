@@ -1,0 +1,54 @@
+function doPost(e) {
+  try {
+    const data = JSON.parse(e.postData.contents);
+    
+    // Извлекаем данные
+    const type = data.t || "";          // Тип обращения
+    const order = data.o || "";          // Заказ (для быстрых заказов)
+    const items = data.items || "";      // Состав корзины
+    const message = data.m || "";        // Сообщение
+    const domain = data.d || "";         // Сайт
+    const name = data.n || "";           // Имя
+    const phone = data.p || "";          // Телефон
+
+    // Форматируем дату: 19.02.26 20:23
+    const now = new Date();
+    const formattedDate = 
+      ('0' + now.getDate()).slice(-2) + '.' +
+      ('0' + (now.getMonth() + 1)).slice(-2) + '.' +
+      now.getFullYear().toString().slice(-2) + ' ' +
+      ('0' + now.getHours()).slice(-2) + ':' +
+      ('0' + now.getMinutes()).slice(-2);
+    
+    // Формируем итоговый "Заказ"
+    let finalOrder = "";
+    
+    if (items) {
+      // Если есть состав корзины - пишем только его
+      finalOrder = items;
+    } else {
+      // Если нет корзины - пишем order (быстрый заказ или пусто)
+      finalOrder = order;
+    }
+
+    // Получаем активный лист
+    const sheet = SpreadsheetApp.getActiveSheet();
+    
+    // Вставляем новую строку после заголовков (на позицию 2)
+    sheet.insertRowBefore(2);
+    
+    // Записываем данные в новую строку
+    sheet.getRange(2, 1, 1, 7).setValues([[
+      formattedDate,  // Время
+      domain,         // Сайт
+      type,           // Тип обращения
+      message,        // Сообщение
+      finalOrder,     // Заказ (только состав корзины ИЛИ быстрый заказ)
+      phone,          // Телефон
+      name            // Имя
+    ]]);
+  
+  } catch (error) {
+    console.error(error);
+  }
+}

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<yml_catalog date="2026-04-27 12:54">
+  <shop>
+    <name />
+    <company />
+    <url />
+    <platform>PowerShellCustomGenerator</platform>
+    <currencies>
+      <currency id="RUR" rate="1" />
+    </currencies>
+    <categories>
+      <category id="1">Газобетон</category>
+      <category id="3">Пескоблоки</category>
+      <category id="4">Тротуарная плитка</category>
+      <category id="5">Кирпичи</category>
+      <category id="6">Бордюры</category>
+      <category id="7">Арболит</category>
+    </categories>
+    <offers>
+      <offer id="1" available="true">
+        <url>/peskoblok-stenovoj-4-kamernyj-390x188x190.html</url>
+        <price>100</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/products/peskoblokStenovoj4Kamernyj.webp</picture>
+        <name>Пескоблок стеновой 4-х камерный 390x188x190</name>
+        <description>Кол-во на поддоне: 71 шт.</description>
+        <param name="Длина" unit="мм">390</param>
+      </offer>
+      <offer id="2" available="true">
+        <url>/peskoblok-polnotelyj-390x190x190.html</url>
+        <price>135</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/products/peskoblokPolnotelyj.webp</picture>
+        <name>Пескоблок полнотелый  390x190x190</name>
+        <description>Кол-во на поддоне: 71 шт.</description>
+        <param name="Длина" unit="мм">390</param>
+      </offer>
+      <offer id="3" available="true">
+        <url>/peskoblok-oblisovochnyj-kolotyj-cvetnoj-390x190x120.html</url>
+        <price />
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/products/peskoblokOblisovochnyjKolotyjCvetnoj.webp</picture>
+        <name>Пескоблок облицовочный колотый, цветной 390x190x120</name>
+        <description>Кол-во на поддоне: 111 шт.</description>
+        <param name="Длина" unit="мм">390</param>
+      </offer>
+      <offer id="4" available="true">
+        <url>/peskoblok-oblisovochnyj-cvetnoj-390x190x190.html</url>
+        <price>125</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/products/peskoblokOblisovochnyjCvetnoj.webp</picture>
+        <name>Пескоблок облицовочный цветной 390х190х190</name>
+        <description>Кол-во на поддоне: 71 шт.</description>
+        <param name="Длина" unit="мм">390</param>
+      </offer>
+      <offer id="5" available="true">
+        <url>/peskoblok-peregorodnyj-390x188x120.html</url>
+        <price>85</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>/img/products/peskoblokPeregorodnyj.webp</picture>
+        <name>Пескоблок перегородный 390x188x120</name>
+        <description>Кол-во на поддоне: 111 шт.</description>
+        <param name="Длина" unit="мм">390</param>
+      </offer>
+      <offer id="6" available="true">
+        <url>/trotuarnaya-plitka-bruschatka-200x100x80.html</url>
+        <price>1350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/products/trotuarnayaPlitkaBruschatka200x100x80.webp</picture>
+        <name>Тротуарная плитка Брусчатка 200x100x80</name>
+        <description>Кол-во на поддоне: 10 м².
+Возможно изготовление цветной&lt;br&gt;</description>
+        <param name="Длина" unit="мм">200</param>
+      </offer>
+      <offer id="7" available="true">
+        <url>/trotuarnaya-plitka-bruschatka-200x100x70.html</url>
+        <price>1200</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/products/trotuarnayaPlitkaBruschatka200x100x70.webp</picture>
+        <name>Тротуарная плитка Брусчатка 200x100x70</name>
+        <description>Кол-во на поддоне: 10 м².&lt;br&gt;
+Возможно изготовление цветной</description>
+        <param name="Длина" unit="мм">200</param>
+      </offer>
+      <offer id="8" available="true">
+        <url>/trotuarnaya-plitka-bruschatka-200x100x60.html</url>
+        <price>1150</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/products/trotuarnayaPlitkaBruschatka200x100x60.webp</picture>
+        <name>Тротуарная плитка Брусчатка 200x100x60</name>
+        <description>Кол-во на поддоне: 10 м².&lt;br&gt;
+Возможно изготовление цветной&lt;br&gt;</description>
+        <param name="Длина" unit="мм">200</param>
+      </offer>
+      <offer id="9" available="true">
+        <url>/trotuarnaya-plitka-kvadrat-200x200x60.html</url>
+        <price>1150</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/products/trotuarnayaPlitkaKvadrat200x200x60.webp</picture>
+        <name>Тротуарная плитка Квадрат 200x200x60</name>
+        <description>Кол-во на поддоне: 10 м².&lt;br&gt;
+Возможно изготовление цветной</description>
+        <param name="Длина" unit="мм">200</param>
+      </offer>
+      <offer id="10" available="true">
+        <url>/trotuarnaya-plitka-kvadrat-500x500x60.html</url>
+        <price>1350</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/products/trotuarnayaPlitkaKvadrat500x500x60.webp</picture>
+        <name>Тротуарная плитка Квадрат 500x500x60</name>
+        <description>Кол-во на поддоне: 10 м².&lt;br&gt;
+Возможно изготовление цветной</description>
+        <param name="Длина" unit="мм">500</param>
+      </offer>
+      <offer id="11" available="true">
+        <url>/trotuarnaya-plitka-staryj-gorod.html</url>
+        <price>1150</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>/img/products/trotuarnayaPlitkaStaryjGorod.webp</picture>
+        <name>Тротуарная плитка Старый город</name>
+        <description>Кол-во на поддоне: 10 м².&lt;br&gt;
+Размеры:
+120х60х60 мм
+120х90х60 мм
+120х120х60 мм
+120х150х60 мм
+120х180х60 мм</description>
+      </offer>
+      <offer id="12" available="true">
+        <url>/kirpich-oblisovochnyj-250x120x88.html</url>
+        <price>26</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <picture>/img/products/kirpichOblisovochnyj.webp</picture>
+        <name>Кирпич облицовочный 250x120x88</name>
+        <description>Кол-во на поддоне: 374 шт.&lt;br&gt;</description>
+        <param name="Длина" unit="мм">250</param>
+      </offer>
+      <offer id="13" available="true">
+        <url>/arbolit-500x300x200.html</url>
+        <price>13500</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>/img/products/arbolit.webp</picture>
+        <name>Арболит 500x300x200</name>
+        <description>Кол-во на поддоне: 33 шт.</description>
+        <param name="Длина" unit="мм">500</param>
+      </offer>
+      <offer id="14" available="true">
+        <url>/bordyur-magistralnyj-1000x300x180.html</url>
+        <price>795</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>/img/products/bordyurMagistralnyj.webp</picture>
+        <name>Бордюр магистральный</name>
+        <description>Кол-во на поддоне: 13 шт.</description>
+        <param name="Длина" unit="мм">1000</param>
+      </offer>
+      <offer id="15" available="true">
+        <url>/bordyur-dorozhnyj-1000x300x150.html</url>
+        <price>740</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>/img/products/bordyurDorozhnyj.webp</picture>
+        <name>Бордюр дорожный</name>
+        <description>Кол-во на поддоне: 13 шт.</description>
+        <param name="Длина" unit="мм">1000</param>
+      </offer>
+      <offer id="16" available="true">
+        <url>/bordyur-trotuarnyj-1000x200x80.html</url>
+        <price>360</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>/img/products/bordyurTrotuarnyj.webp</picture>
+        <name>Бордюр тротуарный</name>
+        <description>Кол-во на поддоне: 36 шт.</description>
+        <param name="Длина" unit="мм">1000</param>
+      </offer>
+      <offer id="17" available="true">
+        <url>/gazobetonnyj-blok-600x100x300.html</url>
+        <price>10000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>/img/products/gazobetonnyjblok10.webp</picture>
+        <name>Газобетонный блок 600x100x300 перегородочный</name>
+        <description>Кол-во в 1 м³: 56 шт.</description>
+        <param name="Длина" unit="мм">600</param>
+      </offer>
+      <offer id="18" available="true">
+        <url>/gazobetonnyj-blok-600x200x300.html</url>
+        <price>10000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>/img/products/gazobetonnyjblok20.webp</picture>
+        <name>Газобетонный блок 600x200x300 универсальный</name>
+        <description>Кол-во в 1 м³: 28 шт.</description>
+        <param name="Длина" unit="мм">600</param>
+      </offer>
+      <offer id="19" available="true">
+        <url>/gazobetonnyj-blok-600x300x300.html</url>
+        <price>10000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>/img/products/gazobetonnyjblok30.webp</picture>
+        <name>Газобетонный блок 600x300x300 стеновой</name>
+        <description>Кол-во в 1 м³: 18 шт.</description>
+        <param name="Длина" unit="мм">600</param>
+      </offer>
+      <offer id="20" available="true">
+        <url>/gazobetonnyj-blok-600x400x300.html</url>
+        <price>11000</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>/img/products/gazobetonnyjblok40.webp</picture>
+        <name>Газобетонный блок 600x400x300 теплоэффективный</name>
+        <description>Кол-во в 1 м³: 14 шт.</description>
+        <param name="Длина" unit="мм">600</param>
+      </offer>
+      <offer id="21" available="false">
+        <url>/gazobetonnyj-blok.html</url>
+        <price />
+        <currencyId>RUR</currencyId>
+        <categoryId>1</categoryId>
+        <picture>/img/products/gazobetonnyjBlok.webp</picture>
+        <name>Газобетонный блок по вашим размерам</name>
+        <description>Стоимость от 11000р м³</description>
+        <param name="Длина" unit="мм"> -</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>

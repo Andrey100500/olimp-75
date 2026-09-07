@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /js/
+Disallow: /dataBase/
+Disallow: /css/
+Disallow: /doc/
+Disallow: /video/
+Disallow: /*etext=
+
+User-agent: Yandex
+Disallow: /js/
+Disallow: /dataBase/
+Disallow: /css/
+Disallow: /doc/
+Disallow: /video/
+Clean-param: etext /
+
+Sitemap: https://olimp-75.ru/sitemap.xml

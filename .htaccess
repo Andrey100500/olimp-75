@@ -1,0 +1,92 @@
+AddDefaultCharset UTF-8
+
+# --- ПЕРЕЗАПИСЬ URL ---
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+
+    # 1. Редирект с index и index.html на корень сайта
+    RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index(\.html)?\ HTTP/
+    RewriteRule ^index(\.html)?$ https://olimp-75.ru/ [R=301,L]
+
+    # 2. Редиректы с см на мм (с проверкой, чтобы не было цикла)
+    # Если запрашивают старый адрес (с .html или без), отправляем на новый без .html
+    RewriteRule ^gazobetonnyj-blok-60x10x30(\.html)?$ /gazobetonnyj-blok-600x100x300 [R=301,L,NC]
+    RewriteRule ^gazobetonnyj-blok-60x20x30(\.html)?$ /gazobetonnyj-blok-600x200x300 [R=301,L,NC]
+    RewriteRule ^gazobetonnyj-blok-60x30x30(\.html)?$ /gazobetonnyj-blok-600x300x300 [R=301,L,NC]
+    RewriteRule ^gazobetonnyj-blok-60x40x30(\.html)?$ /gazobetonnyj-blok-600x400x300 [R=301,L,NC]
+    RewriteRule ^peskoblok(\.html)?$ /peskobloki [R=301,L,NC]
+    RewriteRule ^peskoblokStenovoj4Kamernyj(\.html)?$ /peskoblok-stenovoj-4-kamernyj-390x188x190 [R=301,L,NC]
+    RewriteRule ^peskoblokPolnotelyj(\.html)?$ /peskoblok-polnotelyj-390x190x190 [R=301,L,NC]
+    RewriteRule ^peskoblokOblisovochnyjKolotyjCvetnoj(\.html)?$ /peskoblok-oblisovochnyj-kolotyj-cvetnoj-390x190x120 [R=301,L,NC]
+    RewriteRule ^peskoblokOblisovochnyjCvetnoj(\.html)?$ /peskoblok-oblisovochnyj-cvetnoj-390x190x190 [R=301,L,NC]
+    RewriteRule ^peskoblokPeregorodnyj(\.html)?$ /peskoblok-peregorodnyj-390x188x120 [R=301,L,NC]
+    RewriteRule ^trotuarnayaPlitkaBruschatka200x100x80(\.html)?$ /trotuarnaya-plitka-bruschatka-200x100x80 [R=301,L,NC]
+    RewriteRule ^trotuarnayaPlitkaBruschatka200x100x70(\.html)?$ /trotuarnaya-plitka-bruschatka-200x100x70 [R=301,L,NC]
+    RewriteRule ^trotuarnayaPlitkaBruschatka200x100x60(\.html)?$ /trotuarnaya-plitka-bruschatka-200x100x60 [R=301,L,NC]
+    RewriteRule ^trotuarnayaPlitkaKvadrat200x200x60(\.html)?$ /trotuarnaya-plitka-kvadrat-200x200x60 [R=301,L,NC]
+    RewriteRule ^trotuarnayaPlitkaKvadrat500x500x60(\.html)?$ /trotuarnaya-plitka-kvadrat-500x500x60 [R=301,L,NC]
+    RewriteRule ^trotuarnayaPlitkaStaryjGorod(\.html)?$ /trotuarnaya-plitka-staryj-gorod [R=301,L,NC]
+    RewriteRule ^kirpichOblisovochnyj(\.html)?$ /kirpich-oblisovochnyj-250x120x88 [R=301,L,NC]
+    RewriteRule ^bordyurMagistralnyj(\.html)?$ /bordyur-magistralnyj-1000x300x180 [R=301,L,NC]
+    RewriteRule ^bordyurDorozhnyj(\.html)?$ /bordyur-dorozhnyj-1000x300x150 [R=301,L,NC]
+    RewriteRule ^bordyurTrotuarnyj(\.html)?$ /bordyur-trotuarnyj-1000x200x80 [R=301,L,NC]
+    RewriteRule ^gazobetonnyjblok10(\.html)?$ /gazobetonnyj-blok-600x100x300 [R=301,L,NC]
+    RewriteRule ^gazobetonnyjblok20(\.html)?$ /gazobetonnyj-blok-600x200x300 [R=301,L,NC]
+    RewriteRule ^gazobetonnyjblok30(\.html)?$ /gazobetonnyj-blok-600x300x300 [R=301,L,NC]
+    RewriteRule ^gazobetonnyjblok40(\.html)?$ /gazobetonnyj-blok-600x400x300 [R=301,L,NC]
+    RewriteRule ^gazobetonnyjBlok(\.html)?$ /gazobetonnyj-blok [R=301,L,NC]
+    RewriteRule ^/?products/plitka-trotuarnaya-kvadrat-200h200h60/?$ /trotuarnaya-plitka-kvadrat-200x200x60 [R=301,L,NC]
+    RewriteRule ^/?products_cat/plitka/?$ /trotuarnaya-plitka [R=301,L,NC]
+    RewriteRule ^/?products_cat/peskoblok/?$ /peskobloki [R=301,L,NC]
+    RewriteRule ^/?products_cat/kirpich/?$ /kirpichi [R=301,L,NC]
+    RewriteRule ^/?products_cat/gazobeton/?$ /gazobeton [R=301,L,NC]
+    RewriteRule ^/?products_cat/bordur/?$ /bordyury [R=301,L,NC]
+    RewriteRule ^/?products_cat/arbolit/?$ /arbolit [R=301,L,NC]
+    RewriteRule ^/?products/gazobetonnyj-blok-600h400h300/?$ /gazobetonnyj-blok-600x400x300 [R=301,L,NC]
+    RewriteRule ^/?products/gazobetonnyj-blok-600h300h300/?$ /gazobetonnyj-blok-600x300x300 [R=301,L,NC]
+    RewriteRule ^/?products/gazobetonnyj-blok-600h200h300/?$ /gazobetonnyj-blok-600x200x300 [R=301,L,NC]
+    RewriteRule ^/?products/gazobetonnyj-blok-600h100h300/?$ /gazobetonnyj-blok-600x100x300 [R=301,L,NC]
+    RewriteRule ^/?products/peskoblok-stenovoj-390h188h190/?$ /peskoblok-stenovoj-4-kamernyj-390x188x190 [R=301,L,NC]
+    RewriteRule ^/?products/peskoblok-polnotelyj-390h190h190/?$ /peskoblok-polnotelyj-390x190x190 [R=301,L,NC]
+    RewriteRule ^/?products/peskoblok-peregorodnyj-390h188h120/?$ /peskoblok-peregorodnyj-390x188x120 [R=301,L,NC]
+    RewriteRule ^/?products/peskoblok-obliczovochnyj-kolotyj-czvetnoj-390h190h120/?$ /peskoblok-oblisovochnyj-kolotyj-cvetnoj-390x190x120 [R=301,L,NC]
+    RewriteRule ^/?products/peskoblok-obliczovochnyj-390h190h190/?$ /peskoblok-oblisovochnyj-cvetnoj-390x190x190 [R=301,L,NC]
+    RewriteRule ^/?products/plitka-trotuarnaya-staryj-gorod-120h60h60-120h90h60-120h120h60-120h150h60-120h180h60/?$ /trotuarnaya-plitka-staryj-gorod [R=301,L,NC]
+    RewriteRule ^/?products/plitka-trotuarnaya-kvadrat-500h500h60/?$ /trotuarnaya-plitka-kvadrat-500x500x60 [R=301,L,NC]
+    RewriteRule ^/?products/plitka-trotuarnaya-kvadrat-200h200h60/?$ /trotuarnaya-plitka-kvadrat-200x200x60 [R=301,L,NC]
+    RewriteRule ^/?products/plitka-trotuarnaya-bruschatka-80-200h100h80/?$ /trotuarnaya-plitka-bruschatka-200x100x80 [R=301,L,NC]
+    RewriteRule ^/?products/plitka-trotuarnaya-bruschatka-70-200h100h70/?$ /trotuarnaya-plitka-bruschatka-200x100x70 [R=301,L,NC]
+    RewriteRule ^/?products/plitka-trotuarnaya-bruschatka-60-200h100h60/?$ /trotuarnaya-plitka-bruschatka-200x100x60 [R=301,L,NC]
+    RewriteRule ^/?products/kirpich-obliczovochnyj-250h120h88/?$ /kirpich-oblisovochnyj-250x120x88 [R=301,L,NC]
+    RewriteRule ^/?products/bordyur-magistralnyj/?$ /bordyur-magistralnyj [R=301,L,NC]
+    RewriteRule ^/?products/bordyur-dorozhnyj/?$ /bordyur-dorozhnyj [R=301,L,NC]
+    RewriteRule ^/?products/bordyur-trotuarnyj/?$ /bordyur-trotuarnyj [R=301,L,NC]
+    RewriteRule ^/?products/arbolit-500h300h200/?$ /arbolit-500x300x200 [R=301,L,NC]
+    RewriteRule ^/?products/gazobeton-60h40h30-60h30h30-60x20x30-60h10h30/?$ /gazobetonnyj-blok-600x400x300 [R=301,L,NC]
+    RewriteRule ^/?products/bordyur-trotuarnyj-1000h200h80/?$ /bordyur-trotuarnyj-1000x200x80 [R=301,L,NC]
+    RewriteRule ^/?products/bordyur-magistralnyj-1000h30h180/?$ /bordyur-magistralnyj-1000x300x180 [R=301,L,NC]
+    RewriteRule ^/?products/bordyur-dorozhnyj-1000h300h150/?$ /bordyur-dorozhnyj-1000x300x150 [R=301,L,NC]
+    RewriteRule ^/?products/bloki-arbolitovye-50h30h20-8/?$ /arbolit-500x300x200 [R=301,L,NC]
+
+    # 3. Скрытие расширения .html
+    # Если файл существует, отдаем его, но в браузере оставляем «чистый» URL
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule ^([^.]+)$ $1.html [L]
+</IfModule>
+
+# --- КЭШИРОВАНИЕ ---
+FileETag MTime Size
+<IfModule mod_expires.c>
+    ExpiresActive on
+    <FilesMatch "\.(avif|webp|jpg|jpeg|gif|png|ico|css|js|woff2|cur|woff|mp4|svg)$">
+        ExpiresDefault "access plus 1 hour"
+    </FilesMatch>
+</IfModule>
+
+# --- СЖАТИЕ ---
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/x-javascript application/xml application/xhtml+xml application/rss+xml application/vnd.ms-fontobject application/x-font-ttf application/x-font-opentype image/svg+xml image/x-icon
+</IfModule>
